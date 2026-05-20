@@ -191,7 +191,7 @@ export default function App() {
         const currentSheetName = (sheetNameRef.current || 'Pillar').trim();
         let scriptUrl = (import.meta.env.VITE_GOOGLE_SCRIPT_URL || "").trim();
         if (!scriptUrl || scriptUrl === "YOUR_GOOGLE_SCRIPT_URL_HERE") {
-          scriptUrl = "https://script.google.com/macros/s/AKfycbyXh8M2OlcSJuxvrb7xE1SZJJZ4QYAq34sJunSNh3E1l7WvnWqGDzGOvJgv6dMVnU1ezw/exec?module=pillar";
+          scriptUrl = "https://script.google.com/macros/s/AKfycbyfwOXb4lhedaXBh9i6V9hB3E4JGwPkG11_k2zXC9s2APa_cu4XTjMy-zu06dMtrNI6/exec?module=pillar";
         }
 
         const params = new URLSearchParams();
@@ -292,7 +292,7 @@ export default function App() {
             const updateSheet = async (rowIndex: number, updateData: any) => {
               let scriptUrl = (import.meta.env.VITE_GOOGLE_SCRIPT_URL || "").trim();
               if (!scriptUrl || scriptUrl === "YOUR_GOOGLE_SCRIPT_URL_HERE") {
-                scriptUrl = "https://script.google.com/macros/s/AKfycbyXh8M2OlcSJuxvrb7xE1SZJJZ4QYAq34sJunSNh3E1l7WvnWqGDzGOvJgv6dMVnU1ezw/exec?module=pillar";
+                scriptUrl = "https://script.google.com/macros/s/AKfycbyfwOXb4lhedaXBh9i6V9hB3E4JGwPkG11_k2zXC9s2APa_cu4XTjMy-zu06dMtrNI6/exec?module=pillar";
               }
 
               const payload = {
@@ -461,7 +461,7 @@ export default function App() {
                   let scriptUrl = (import.meta.env.VITE_GOOGLE_SCRIPT_URL || "").trim();
                   if (scriptUrl) {
                     if (!scriptUrl || scriptUrl === "YOUR_GOOGLE_SCRIPT_URL_HERE") {
-                      scriptUrl = "https://script.google.com/macros/s/AKfycbyXh8M2OlcSJuxvrb7xE1SZJJZ4QYAq34sJunSNh3E1l7WvnWqGDzGOvJgv6dMVnU1ezw/exec?module=pillar";
+                      scriptUrl = "https://script.google.com/macros/s/AKfycbyfwOXb4lhedaXBh9i6V9hB3E4JGwPkG11_k2zXC9s2APa_cu4XTjMy-zu06dMtrNI6/exec?module=pillar";
                     }
                     await fetch(`${scriptUrl}${scriptUrl.includes('?') ? '&' : '?' }action=updatePillar`, {
                       method: 'POST',
@@ -627,7 +627,7 @@ export default function App() {
                 <span className="font-bold text-white">AutoPilot</span>
                 <span className="text-slate-400 font-normal ml-1.5 text-base">Post Pillar</span>
               </div>
-              <span className="text-red-500 font-bold text-lg tracking-tight leading-none">Heru</span>
+              <span className="text-red-500 font-bold text-lg tracking-tight leading-none">Heru - Indo</span>
             </div>
           </div>
 
